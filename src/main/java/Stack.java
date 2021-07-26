@@ -46,4 +46,10 @@ public class Stack<T> {
             throw new RuntimeException("Stack is empty");
         return stack.removeLast();
     }
+
+    //Traverse through the queue
+    public void traverse()
+    {
+        stack.traverse();
+    }
 }

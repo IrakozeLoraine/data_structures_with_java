@@ -45,9 +45,9 @@ public class DoublyLinkedList<K> {
     //Add element to the tail
     public  void addLast(K element)
     {
-        if(isEmpty()) head = tail = new Node<K>(element, null, null);
+        if(isEmpty()) head = tail = new Node<>(element, null, null);
         else{
-            tail.next = new Node<K>(element, tail, null);
+            tail.next = new Node<>(element, tail, null);
             tail = tail.next;
         }
         size++;
@@ -56,9 +56,9 @@ public class DoublyLinkedList<K> {
     //Add element to the head
     public void addFirst(K element)
     {
-        if(isEmpty()) head = tail = new Node<K>(element, null, null);
+        if(isEmpty()) head = tail = new Node<>(element, null, null);
         else{
-            head.prev = new Node<K>(element, null, head);
+            head.prev = new Node<>(element, null, head);
             head = head.prev;
         }
         size++;
@@ -197,5 +197,12 @@ public class DoublyLinkedList<K> {
         }
         sb.append("]");
         return sb.toString();
+    }
+
+    //Traverse through the linked list
+    public void traverse() {
+        while (head.next != null) {
+            System.out.println(head.element+" >> ");
+        }
     }
 }

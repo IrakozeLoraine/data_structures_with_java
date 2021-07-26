@@ -44,4 +44,10 @@ public class Queue <T>{
             throw new RuntimeException("Queue is empty");
         return queue.removeFirst();
     }
+
+    //Traverse through the queue
+    public void traverse()
+    {
+        queue.traverse();
+    }
 }

@@ -2,8 +2,7 @@ public class DoublyLinkedList<K> {
     /**
      * Implementation of a doubly linked list
      *
-     * Author: Irakoze Loraine
-     * created at: 24th July 2021
+     * Author: Irakoze Loraine, mukezwa@gmail.com
      */
     private int size = 0;
 
@@ -170,12 +169,11 @@ public class DoublyLinkedList<K> {
                 if(temp.element == null)
                     return index;
         }
-        else{
+        else
             for(temp = head; temp != null; temp = temp.next)
                 index++;
                 if(obj.equals(temp.element))
                     return index;
-        }
         return -1;
     }
 

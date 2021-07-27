@@ -2,8 +2,7 @@ public class DynamicArray<T>  {
     /**
      * Implementation of a dynamic array using static arrays
      *
-     * Author: Irakoze Loraine
-     * created at: 24th July 2021
+     * Author: Irakoze Loraine, mukezwa@gmail.com
      */
     private T[] arr;
     private int len=0;

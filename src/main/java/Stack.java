@@ -4,8 +4,7 @@ public class Stack<T> {
      * Implementation of a stack using a doubly linked list
      * but only using the methods of a singly linked list
      *
-     * Author: Irakoze Loraine
-     * created at: 24th July 2021
+     * Author: Irakoze Loraine, mukezwa@gmail.com
      */
 
     private DoublyLinkedList<T> stack = new DoublyLinkedList<>();

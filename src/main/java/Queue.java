@@ -2,8 +2,7 @@ public class Queue <T>{
     /**
      * Implementation of a queue using a doubly linked list
      *
-     * Author: Irakoze Loraine
-     * created at: 24th July 2021
+     * Author: Irakoze Loraine, mukezwa@gmail.com
      */
 
     private DoublyLinkedList<T> queue = new DoublyLinkedList<>();

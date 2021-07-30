@@ -8,6 +8,13 @@ public class BinarySearchTree <T extends Comparable<T>> {
      * Author: Irakoze Loraine, mukezwa@gmail.com
      */
 
+    public enum TreeTraversalEnum {
+        PRE_ORDER,
+        IN_ORDER,
+        POST_ORDER,
+        LEVEL_ORDER
+    }
+
     private class Node {
         T element;
         Node left, right;
